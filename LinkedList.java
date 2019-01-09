@@ -9,6 +9,7 @@ public void insert(String data)
 	
 	node.data=data;
 	node.next=null;
+
 	if(head==null)
 	{
 		head=node;
@@ -107,7 +108,7 @@ public void printList()
 				head = current.next;
 				return;
 			}
-			while(current!=null&&!(current.data.equals(ss)))
+			while(current!=null&&!(current.data equals(ss)))
 			{
 				temp= current; 
 				current = current.next;

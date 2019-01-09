@@ -2,8 +2,8 @@ package datastructures;
 
 public class Node 
 {
-	int data1;
-String data;
+int data1;
+int data;
 Node next;
 
 }
