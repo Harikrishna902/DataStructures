@@ -1,7 +1,8 @@
+
 package datastructures;
 import java.util.GregorianCalendar;
 
-import bridgelabz.utility.utility;
+import bridgelabz.utility;
 
 public class Calendar 
 {
@@ -13,6 +14,7 @@ public static void printCalendar(int year,int month)
 	int Leapyear;
 	int dayOfWeek=1;
 	String space=" ";
+	//month number starts from 0-11
 	String []monthName= {"january","feb","march","April","May","June","july","August","Sep","oct","Nov","Dec"};
 	int []calDays= {31,28,31,30,31,30,31,31,30,31,30,31};
 	GregorianCalendar cal=new GregorianCalendar(year,month,1);
@@ -29,6 +31,8 @@ public static void printCalendar(int year,int month)
 			
 		}
 	System.out.println("year: "+ year + space + "month:"+monthName[month]+"\n");
+	
+	//day number starts from 1 -7
 	System.out.println(" S M T W TH F SA \n");
 	for(int daycounter=1;daycounter<=calDays[month];daycounter++);
 			
@@ -75,6 +79,4 @@ System.out.println("enter the month number");
 int month=utility.getint();
 printCalendar(year,month);
 }
-	}
-
-
+}
